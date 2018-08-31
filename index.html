@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Play</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Tangerine:700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+
+
+
+</head>
+<body>
+    <header>
+        <div id="header-container">
+            <div id="title-container01"><h1>play</h1></div>
+            <div id="title-container02"><h2>play</h2></div>
+            <div id="title-container03"><h2>break</h2></div>
+            <div id="caution-container">
+                <p id="caution"><i class="fas fa-headphones"></i>
+                     Please wear headphones and listen with both ears.</p>
+            </div>
+            <div id="explain-container">
+                <p id="explain">
+                    Binaural beat shows its effect by hearing a sound of different Hz from the left and right ear.
+                </p>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div id="main-container">
+        <div id="canvas-container">
+            <p id="caption01">left: 120Hz right: 124Hz</p>
+            <p id="caption02">left: 490Hz right: 492Hz</p>
+            <p id="caption03">left: 250Hz right: 254Hz</p>
+        </div>
+
+        <div id="works-canvas-container">
+            <div class="close-btn">
+                <i class="material-icons">clear</i>
+           </div>
+
+            <div class="fullscreen-btn">
+                <i class="material-icons">fullscreen</i>
+            </div>
+        </div>
+    </div>
+    </main>
+    <div id="audio-container">
+        <audio id="audio01" src="./asset/audio/binaural01.mp3" type="audio/mp3" preload="auto">
+        <audio id="audio02" src="./asset/audio/binaural02.mp3" type="audio/mp3" preload="auto">
+        <audio id="audio03" src="./asset/audio/binaural03.mp3" type="audio/mp3" preload="auto">
+    </div>
+
+
+
+
+    <script src="./jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.1/p5.min.js"></script>
+    <script src="./js/p5.play.js"></script>
+    <script src="./js/works01.js"></script>
+    <script src="./js/works02.js"></script>
+    <script src="./js/works03.js"></script>
+    <script src="js/script.js"></script>
+
+    <script>
+        $('#caution').hover(
+        function () {
+        $('#explain').css('opacity',1);
+        $('#caption01').css('opacity',1);
+        $('#caption02').css('opacity',1);
+        $('#caption03').css('opacity',1);
+        },
+        function () {
+        $('#explain').css('opacity',0);
+        $('#caption01').css('opacity',0);
+        $('#caption02').css('opacity',0);
+        $('#caption03').css('opacity',0);
+        });
+        $('#title-container01').hover(
+        function () {
+        $('#title-container02').css('opacity',0.3);
+        $('#title-container03').css('opacity',0.3);
+        },
+        function () {
+        $('#title-container02').css('opacity',0);
+        $('#title-container03').css('opacity',0);
+        });
+
+    </script>
+
+</body>
+
+
+</html>
