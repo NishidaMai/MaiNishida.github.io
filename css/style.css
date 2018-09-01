@@ -37,24 +37,6 @@ header{
     left: 48%;
     position: absolute;
 }
-#title-container02{
-    color: #FFF;
-    text-align: center;
-    top: 57px;
-    left: 40%;
-    position: absolute;
-    opacity: 0;
-
-}
-#title-container03{
-    color: #FFF;
-    text-align: center;
-    top: 57px;
-    left: 56%;
-    position: absolute;
-    opacity: 0;
-
-}
 h1{
     margin: 0;
     font-size: 80px;
