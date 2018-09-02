@@ -20,74 +20,59 @@ body{
 /*header----------*/
 
 header{
-    position: absolute;
+    position: relative;
     left: 0;
     top: 0;
     width: 100%;
     height: 500px;
     z-index: 950;
 }
-#header-container{
-    position: relative;
-}
 
-#title-container01{
-    text-align: center;
-    top: 57px;
-    left: 48%;
-    position: absolute;
-}
 h1{
-    margin: 0;
+    margin: 40px 0 40px;
     font-size: 80px;
     color: #FFF;
     font-family: 'Tangerine', cursive;
-    display: inline;
+    text-align: center;
 }
-h2{
-    margin: 0;
-    font-size: 80px;
-    font-family: 'Tangerine', cursive;
-    display: inline;
-}
+
 h1:hover{
     color: #3b86d4
 }
-#caution-container{
-    text-align: center;
-    position: absolute;
-    top: 180px;
-    left: 45%;
-    z-index: 1000;
-}
+
 #caution{
     font-family: 'Source Sans Pro', sans-serif;
     color: #FFF;
     text-align: center;
     font-size: 15px;
-    display: inline;
+    width: 100%;
+    margin-bottom: 20px;
+
 }
 #caution:hover{
     color: #3b86d4;
-}
-#explain-container{
-    text-align: center;
-    position: absolute;
-    top: 210px;
-    left: 43%;
-    z-index: 2500;
 }
 #explain{
     font-family: 'Source Sans Pro', sans-serif;
     color: #3b86d4;
     text-align: center;
     font-size: 10px;
-    display: inline;
     opacity: 0;
+    transition: all 1s;
 }
-#explain:hover{
+#explain.in{
     opacity: 1;
 }
+
+@keyframes main-fadein {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
 
 /*main---------------*/
 main{
@@ -110,34 +95,47 @@ main{
     position: absolute;
     z-index: 1100;
     top: 650px;
-    left:47.5%;
+    left:50%;
+    margin-left: -16px;
     font-size: 11px;
     font-family: 'Source Sans Pro', sans-serif;
     color: #3b86d4;
     display: inline;
     opacity: 0;
+    transition: all 1s;
+}
+#caption01.in{
+    opacity: 1;
 }
 #caption02{
     position: absolute;
     z-index: 1100;
     top: 650px;
-    left:71%;
+    left:68%;
     font-size: 11px;
     font-family: 'Source Sans Pro', sans-serif;
     color: #3b86d4;
     display: inline;
     opacity: 0;
+    transition: all 1s;
+}
+#cation01.in{
+    opacity: 1;
 }
 #caption03{
     position: absolute;
     z-index: 1100;
     top: 650px;
-    left:26%;
+    left:28%;
     font-size: 11px;
     font-family: 'Source Sans Pro', sans-serif;
     color: #3b86d4;
     display: inline;
     opacity: 0;
+    transition: all 1s;
+}
+#caption03.in{
+    opacity: 1;
 }
 
 
